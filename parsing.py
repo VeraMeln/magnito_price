@@ -29,14 +29,14 @@ def get_html(url, pages):
 			kv += 1
 			print('объявление №', kv)
 			offer['id'] = kv
-			offer['type'] = list_ttx[i].text()
-			offer['district'] = list_ttx[i+1].text()
-			offer['adress'] = list_ttx[i+2].text()
-			offer['floor'] = list_ttx[i+3].text()
-			offer['total_square'] = float(list_ttx[i+4].text())
-			offer['living_square'] = float(list_ttx[i+5].text())
-			offer['kitchen_square'] = float(list_ttx[i+6].text())
-			offer['price'] = int(list_ttx[i+8].text())
+			offer['type'] = None if (list_ttx[i].text() == '') or (list_ttx[i].text() == ' ') else list_ttx[i].text()
+			offer['district'] = None if list_ttx[i+1].text() == '' else list_ttx[i+1].text()
+			offer['adress'] = None if list_ttx[i+2].text() == '' else list_ttx[i+2].text()
+			offer['floor'] = None if list_ttx[i+3].text() == '' else list_ttx[i+3].text()
+			offer['total_square'] = None if list_ttx[i+4].text() == '' else float(list_ttx[i+4].text())
+			offer['living_square'] = None if list_ttx[i+5].text() == '' else float(list_ttx[i+5].text())
+			offer['kitchen_square'] = None if list_ttx[i+6].text() == '' else float(list_ttx[i+6].text())
+			offer['price'] = None if list_ttx[i+8].text() == '' else int(list_ttx[i+8].text())
 
 			for key, value in offer.items():
 				print(key, value)
