@@ -5,6 +5,7 @@
 [код для парсинга данных](parsing.py)
 [тетрадка с подбором гипрепараметров модели: magnito_price_model_selection.ipynb](magnito_price_model_selection.ipynb)
 [РЕШЕНИЕ: тетрадка обученной моделью: magnito_price_prediction.ipynb](magnito_price_prediction.ipynb)
+[Отчет по исследованию](Отчет.pdf)
 
 **Постановка задачи**
 
