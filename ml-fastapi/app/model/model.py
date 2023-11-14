@@ -2,6 +2,8 @@ import pickle
 import re
 from pathlib import Path
 import pandas as pd
+import magnito_price
+
 
 __version__ = "1.0"
 
